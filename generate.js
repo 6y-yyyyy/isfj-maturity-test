@@ -10,7 +10,7 @@ const MBTI = [
   // ---- 分析师 NT (紫色系) ----
   {
     id:'INTJ', name:'建筑师', en:'Architect', group:'analyst', color:'#7C3AED', colorLight:'#f5f3ff',
-    icon:'psychology', emoji:'🏗️',
+    icon:'architecture', emoji:'architecture',
     desc:'INTJ 是富有远见的战略家，拥有强大的内倾直觉 (Ni) 和外倾思考 (Te)。你擅长洞察复杂系统的深层规律，制定长远计划并坚定执行。你的成长课题包括：情感连接的建立、对他人感受的敏感度、以及在完美主义与行动力之间找到平衡。',
     functions:'Ni Te Fi Se',
     strengths:'战略思维、独立判断、长远规划、系统构建',
@@ -18,7 +18,7 @@ const MBTI = [
   },
   {
     id:'INTP', name:'逻辑学家', en:'Logician', group:'analyst', color:'#7C3AED', colorLight:'#f5f3ff',
-    icon:'psychology', emoji:'🔬',
+    icon:'psychology', emoji:'science',
     desc:'INTP 是创新的思想家，以内倾思考 (Ti) 为主导，外倾直觉 (Ne) 为辅助。你沉迷于分析事物的原理，追求逻辑上的优雅和一致性。你的成长课题包括：将想法转化为行动、情感表达的练习、以及在无尽的思考中找到实践的落脚点。',
     functions:'Ti Ne Si Fe',
     strengths:'深度分析、创新思维、智识诚实、灵活适应',
@@ -26,7 +26,7 @@ const MBTI = [
   },
   {
     id:'ENTJ', name:'指挥官', en:'Commander', group:'analyst', color:'#7C3AED', colorLight:'#f5f3ff',
-    icon:'psychology', emoji:'⚔️',
+    icon:'psychology', emoji:'swords',
     desc:'ENTJ 是天生的领导者，以外倾思考 (Te) 为主导，内倾直觉 (Ni) 为辅助。你善于组织资源、制定战略、带领团队高效前进。你的成长课题包括：耐心与倾听、对他人情感的敏感度、以及学会在"赢"之外找到意义。',
     functions:'Te Ni Se Fi',
     strengths:'领导力、战略眼光、高效执行、果断决策',
@@ -34,7 +34,7 @@ const MBTI = [
   },
   {
     id:'ENTP', name:'辩论家', en:'Debater', group:'analyst', color:'#7C3AED', colorLight:'#f5f3ff',
-    icon:'psychology', emoji:'💡',
+    icon:'psychology', emoji:'lightbulb',
     desc:'ENTP 是机智的创新者，以外倾直觉 (Ne) 为主导，内倾思考 (Ti) 为辅助。你享受思想的碰撞，善于发现可能性、挑战假设、提出新颖的解决方案。你的成长课题包括：专注力的培养、完成而不是开始、以及情感承诺的建立。',
     functions:'Ne Ti Fe Si',
     strengths:'创造力、辩论能力、适应力、知识广度',
@@ -43,7 +43,7 @@ const MBTI = [
   // ---- 外交家 NF (绿色系) ----
   {
     id:'INFJ', name:'提倡者', en:'Advocate', group:'diplomat', color:'#059669', colorLight:'#ecfdf5',
-    icon:'self_improvement', emoji:'🌊',
+    icon:'self_improvement', emoji:'water',
     desc:'INFJ 是深邃的理想主义者，以内倾直觉 (Ni) 为主导，外倾情感 (Fe) 为辅助。你能看透事物的本质，深刻地理解他人的内心世界，并渴望让世界变得更好。你的成长课题包括：自我关怀与边界设立、将理想落地为行动、以及学会不被他人的情绪淹没。',
     functions:'Ni Fe Ti Se',
     strengths:'深度洞察、共情力、理想主义、坚定信念',
@@ -51,7 +51,7 @@ const MBTI = [
   },
   {
     id:'INFP', name:'调停者', en:'Mediator', group:'diplomat', color:'#059669', colorLight:'#ecfdf5',
-    icon:'self_improvement', emoji:'🕊️',
+    icon:'self_improvement', emoji:'raven',
     desc:'INFP 是充满诗意的理想主义者，以内倾情感 (Fi) 为主导，外倾直觉 (Ne) 为辅助。你忠于内心的价值观，追求真实和意义，拥有丰富的情感世界和创造力。你的成长课题包括：将理想转化为现实行动、应对现实中的妥协、以及学会保护自己不受伤害。',
     functions:'Fi Ne Si Te',
     strengths:'价值坚守、创造力、共情深度、真诚待人',
@@ -59,7 +59,7 @@ const MBTI = [
   },
   {
     id:'ENFJ', name:'主人公', en:'Protagonist', group:'diplomat', color:'#059669', colorLight:'#ecfdf5',
-    icon:'self_improvement', emoji:'🌟',
+    icon:'self_improvement', emoji:'stars',
     desc:'ENFJ 是富有魅力的教育者，以外倾情感 (Fe) 为主导，内倾直觉 (Ni) 为辅助。你天生善于感知他人的需求，激励和引导他人成长，是人群中的凝聚力中心。你的成长课题包括：照顾自己而非只照顾他人、接受自己的不完美、以及学会在没有人需要你的时候找到自我价值。',
     functions:'Fe Ni Se Ti',
     strengths:'领导魅力、共情力、沟通力、激励他人',
@@ -67,7 +67,7 @@ const MBTI = [
   },
   {
     id:'ENFP', name:'竞选者', en:'Campaigner', group:'diplomat', color:'#059669', colorLight:'#ecfdf5',
-    icon:'self_improvement', emoji:'🎉',
+    icon:'self_improvement', emoji:'celebration',
     desc:'ENFP 是热情洋溢的探索者，以外倾直觉 (Ne) 为主导，内倾情感 (Fi) 为辅助。你对生活充满热情和好奇，善于发现人与人之间的可能性，用你的创意和能量感染身边的人。你的成长课题包括：专注力的养成、从热情到坚持、以及学会在自由与责任之间找到平衡。',
     functions:'Ne Fi Te Si',
     strengths:'热情感染力、创造力、同理心、灵活适应',
@@ -76,7 +76,7 @@ const MBTI = [
   // ---- 守护者 SJ (橙色系) ----
   {
     id:'ISTJ', name:'物流师', en:'Logistician', group:'sentinel', color:'#EA580C', colorLight:'#fff7ed',
-    icon:'shield', emoji:'📦',
+    icon:'shield', emoji:'inventory_2',
     desc:'ISTJ 是稳重可靠的组织者，以内倾感觉 (Si) 为主导，外倾思考 (Te) 为辅助。你注重事实、秩序和责任，一旦承诺就会坚持到底，是任何团队的中流砥柱。你的成长课题包括：对新事物的开放态度、情感表达的练习、以及学会在规则之外看到可能性。',
     functions:'Si Te Fi Ne',
     strengths:'可靠负责、注重事实、组织力强、坚韧不拔',
@@ -84,7 +84,7 @@ const MBTI = [
   },
   {
     id:'ISFJ', name:'守护者', en:'Defender', group:'sentinel', color:'#EA580C', colorLight:'#fff7ed',
-    icon:'shield', emoji:'🛡️',
+    icon:'shield', emoji:'shield',
     desc:'ISFJ 是温暖可靠的守护者，以内倾感觉 (Si) 为主导，外倾情感 (Fe) 为辅助。你细心体贴、忠诚可靠，用实际的行动默默守护着你在乎的人和事。你的成长课题包括：学会对自己温柔、设立健康的边界、勇敢表达真实的想法、以及拥抱变化带来的成长。',
     functions:'Si Fe Ti Ne',
     strengths:'温暖体贴、细节关注、忠诚可靠、实际贡献',
@@ -92,7 +92,7 @@ const MBTI = [
   },
   {
     id:'ESTJ', name:'总经理', en:'Executive', group:'sentinel', color:'#EA580C', colorLight:'#fff7ed',
-    icon:'shield', emoji:'📋',
+    icon:'shield', emoji:'assignment',
     desc:'ESTJ 是高效务实的管理者，以外倾思考 (Te) 为主导，内倾感觉 (Si) 为辅助。你善于制定流程、管理资源、确保一切按计划执行，是组织和团队的支柱。你的成长课题包括：倾听他人的情感需求、对新观点保持开放、以及学会在效率之外看到人的价值。',
     functions:'Te Si Ne Fi',
     strengths:'高效执行、组织管理、责任心强、务实可靠',
@@ -100,7 +100,7 @@ const MBTI = [
   },
   {
     id:'ESFJ', name:'执政官', en:'Consul', group:'sentinel', color:'#EA580C', colorLight:'#fff7ed',
-    icon:'shield', emoji:'🤝',
+    icon:'shield', emoji:'handshake',
     desc:'ESFJ 是热情友善的照顾者，以外倾情感 (Fe) 为主导，内倾感觉 (Si) 为辅助。你擅长维护人际和谐、照顾他人的实际需求、营造温暖有序的社交环境。你的成长课题包括：接受建设性的冲突、关注自己内心真实的声音、以及学会在不被所有人喜欢时仍然保持自信。',
     functions:'Fe Si Ne Ti',
     strengths:'社交能力、关怀他人、组织协调、维护和谐',
@@ -109,7 +109,7 @@ const MBTI = [
   // ---- 探险家 SP (粉色系) ----
   {
     id:'ISTP', name:'鉴赏家', en:'Virtuoso', group:'explorer', color:'#DB2777', colorLight:'#fdf2f8',
-    icon:'build', emoji:'🔧',
+    icon:'build', emoji:'build',
     desc:'ISTP 是冷静务实的实干家，以内倾思考 (Ti) 为主导，外倾感觉 (Se) 为辅助。你善于分析事物的运作原理，动手能力极强，在危机中保持冷静和灵活。你的成长课题包括：情感表达与深度连接、长期规划的建立、以及学会在"做"之外也能"感受"。',
     functions:'Ti Se Ni Fe',
     strengths:'动手能力、冷静分析、灵活应变、解决问题',
@@ -117,7 +117,7 @@ const MBTI = [
   },
   {
     id:'ISFP', name:'探险家', en:'Adventurer', group:'explorer', color:'#DB2777', colorLight:'#fdf2f8',
-    icon:'palette', emoji:'🎨',
+    icon:'palette', emoji:'palette',
     desc:'ISFP 是细腻敏感的艺术家，以内倾情感 (Fi) 为主导，外倾感觉 (Se) 为辅助。你对美和真实有独特的感知力，用创造力和温柔的方式体验和表达世界。你的成长课题包括：在坚持自我和适应他人之间找到平衡、将内在感受转化为行动、以及学会面对必要的冲突。',
     functions:'Fi Se Ni Te',
     strengths:'审美力、真诚待人、灵活适应、温暖友善',
@@ -125,7 +125,7 @@ const MBTI = [
   },
   {
     id:'ESTP', name:'企业家', en:'Entrepreneur', group:'explorer', color:'#DB2777', colorLight:'#fdf2f8',
-    icon:'rocket_launch', emoji:'🔥',
+    icon:'rocket_launch', emoji:'local_fire_department',
     desc:'ESTP 是精力充沛的行动派，以外倾感觉 (Se) 为主导，内倾思考 (Ti) 为辅助。你活在当下、行动迅速、善于抓住机会，是天生的危机处理者和谈判高手。你的成长课题包括：考虑行动的长期后果、发展情感深度、以及学会在速度之外关注质量。',
     functions:'Se Ti Fe Ni',
     strengths:'行动力强、灵活应变、实际解决、社交魅力',
@@ -133,7 +133,7 @@ const MBTI = [
   },
   {
     id:'ESFP', name:'表演者', en:'Entertainer', group:'explorer', color:'#DB2777', colorLight:'#fdf2f8',
-    icon:'theater_comedy', emoji:'🎭',
+    icon:'theater_comedy', emoji:'theater_comedy',
     desc:'ESFP 是天生的表演者和生活享受者，以外倾感觉 (Se) 为主导，内倾情感 (Fi) 为辅助。你热爱生活、善于带动气氛、用你的热情和真诚让身边的人感到快乐。你的成长课题包括：规划未来的能力、在热情之外找到深度、以及学会面对严肃和困难的话题。',
     functions:'Se Fi Te Ni',
     strengths:'热情感染、灵活应变、实际助人、活在当下',
@@ -657,30 +657,30 @@ function buildAnalysis(type, level) { // level: 'primary','intermediate','advanc
 
   if (level === 'primary') {
     return `
-      <h3>🔍 画像：萌芽期的 ${type.name} (${type.id})</h3>
+      <h3><span class="material-symbols-outlined icon-inline">search</span> 画像：萌芽期的 ${type.name} (${type.id})</h3>
       <p>你正处在 ${type.id} 人格发展的<strong>初级阶段</strong>。你的主导功能 ${fnNames[dom]}（${dom}）和辅助功能 ${fnNames[aux]}（${aux}）已经以本能的方式在发挥作用——你可能已经能感受到自己的一些天赋特质，比如${type.strengths.split('、').slice(0,3).join('、')}。但在这个阶段，这些特质更多是出于本能的驱动，而非有意识的选择。</p>
       <p>你可能时常发现自己陷入一些重复的模式——${type.challenges.split('、').slice(0,3).join('、')}——却不清楚为什么会这样，也不知道如何改变。你的第四功能 ${fnNames[inf]}（${inf}）是你最大的盲点和成长区，在压力下你可能会表现出一些让自己事后感到意外的行为。</p>
-      <div class="analysis-highlight strength"><p><strong>💚 你的天赋萌芽：</strong>你能在自己擅长的领域展现出自然的优势——当你在舒适区做自己擅长的事时，你的表现可能远超同龄人。这些都是你未来成长的重要基础。</p></div>
-      <div class="analysis-highlight weakness"><p><strong>⚠️ 当前主要挑战：</strong>${type.challenges}——这些问题大多源于你还没有学会有意识地管理自己的认知功能。好消息是，这些问题都是可以改善的。</p></div>
-      <p><strong>🎯 核心成长方向：</strong>从"无意识驱动"进入"有意识觉察"——开始注意自己的行为模式、情绪触发点和认知盲点，为后续的有意识成长打下基础。</p>
+      <div class="analysis-highlight strength"><p><strong><span class="material-symbols-outlined icon-inline">favorite</span> 你的天赋萌芽：</strong>你能在自己擅长的领域展现出自然的优势——当你在舒适区做自己擅长的事时，你的表现可能远超同龄人。这些都是你未来成长的重要基础。</p></div>
+      <div class="analysis-highlight weakness"><p><strong><span class="material-symbols-outlined icon-inline">warning</span> 当前主要挑战：</strong>${type.challenges}——这些问题大多源于你还没有学会有意识地管理自己的认知功能。好消息是，这些问题都是可以改善的。</p></div>
+      <p><strong><span class="material-symbols-outlined icon-inline">my_location</span> 核心成长方向：</strong>从"无意识驱动"进入"有意识觉察"——开始注意自己的行为模式、情绪触发点和认知盲点，为后续的有意识成长打下基础。</p>
     `;
   } else if (level === 'intermediate') {
     return `
-      <h3>🔍 画像：成长中的 ${type.name} (${type.id})</h3>
+      <h3><span class="material-symbols-outlined icon-inline">search</span> 画像：成长中的 ${type.name} (${type.id})</h3>
       <p>你正处在 ${type.id} 人格发展的<strong>中级阶段</strong>。你已经对自己的认知模式有了一定的了解，开始有意识地运用你的主导功能 ${fnNames[dom]}（${dom}）和辅助功能 ${fnNames[aux]}（${aux}），同时也在学习管理和弥补你的盲点。</p>
       <p>在这个阶段，你可能已经取得了一些切实的进步——比如更善于在${type.strengths.split('、')[0]}和${type.challenges.split('、')[0]}之间找到平衡。但同时你也可能感受到"知易行难"的拉扯——知道应该怎么做，但实际做的时候旧模式仍然会出现。</p>
-      <div class="analysis-highlight strength"><p><strong>💚 已经取得的进步：</strong>你开始具备"元认知"能力——能在行为当下或之后识别出自己的模式。这是成长中最关键的突破，说明你已经从"自动驾驶"进入了"有意识驾驶"。</p></div>
-      <div class="analysis-highlight weakness"><p><strong>⚠️ 仍在面对的挑战：</strong>第三功能 ${fnNames[ter]}（${ter}）和第四功能 ${fnNames[inf]}（${inf}）的整合仍在进行中。在压力或特定情境下，旧模式仍然可能反弹。这是正常的"螺旋上升"过程。</p></div>
-      <p><strong>🎯 核心成长方向：</strong>将"有意识的觉察"转化为"自动化的习惯"——让新的、更健康的模式成为你的默认设置，而不再是需要刻意努力的事。</p>
+      <div class="analysis-highlight strength"><p><strong><span class="material-symbols-outlined icon-inline">favorite</span> 已经取得的进步：</strong>你开始具备"元认知"能力——能在行为当下或之后识别出自己的模式。这是成长中最关键的突破，说明你已经从"自动驾驶"进入了"有意识驾驶"。</p></div>
+      <div class="analysis-highlight weakness"><p><strong><span class="material-symbols-outlined icon-inline">warning</span> 仍在面对的挑战：</strong>第三功能 ${fnNames[ter]}（${ter}）和第四功能 ${fnNames[inf]}（${inf}）的整合仍在进行中。在压力或特定情境下，旧模式仍然可能反弹。这是正常的"螺旋上升"过程。</p></div>
+      <p><strong><span class="material-symbols-outlined icon-inline">my_location</span> 核心成长方向：</strong>将"有意识的觉察"转化为"自动化的习惯"——让新的、更健康的模式成为你的默认设置，而不再是需要刻意努力的事。</p>
     `;
   } else {
     return `
-      <h3>🔍 画像：整合期的 ${type.name} (${type.id})</h3>
+      <h3><span class="material-symbols-outlined icon-inline">search</span> 画像：整合期的 ${type.name} (${type.id})</h3>
       <p>你正处在 ${type.id} 人格发展的<strong>高阶阶段</strong>。你已经完成了认知功能整合中最艰难的工作——你不再被自己的模式控制，而是成为了模式的驾驭者。你的主导功能 ${fnNames[dom]}（${dom}）和辅助功能 ${fnNames[aux]}（${aux}）发挥得游刃有余，第三功能 ${fnNames[ter]}（${ter}）和第四功能 ${fnNames[inf]}（${inf}）也得到了有意识的发展和整合。</p>
       <p>在这个阶段，你的${type.strengths.split('、').slice(0,3).join('、')}等优势已经不再是偶尔闪现的天赋，而是稳定、可靠的核心能力。同时，曾经的盲点——${type.challenges.split('、').slice(0,2).join('、')}——虽然可能仍然存在，但你已经有了管理它们的能力和智慧。</p>
-      <div class="analysis-highlight strength"><p><strong>🌟 成熟的表现：</strong>你在自己的核心领域展现出真正的mastery——不仅是技能上的熟练，更是对自我和他人深刻的理解。你的存在本身就能给周围的人带来稳定感、洞察力或激励。</p></div>
-      <div class="analysis-highlight"><p><strong>🚀 持续成长：</strong>达到高阶不意味着"完成"。新的成长课题会不断浮现——可能是帮助他人成长、在更大范围内发挥影响、或是探索自我实现的新维度。保持初学者心态，你最好的作品可能还没到来。</p></div>
-      <p><strong>🎯 核心方向：</strong>从"个人成长"迈向"社会贡献"——用你成熟的 ${type.name} 力量去影响和赋能更多的人，成为他人的榜样和推动力。</p>
+      <div class="analysis-highlight strength"><p><strong><span class="material-symbols-outlined icon-inline">stars</span> 成熟的表现：</strong>你在自己的核心领域展现出真正的mastery——不仅是技能上的熟练，更是对自我和他人深刻的理解。你的存在本身就能给周围的人带来稳定感、洞察力或激励。</p></div>
+      <div class="analysis-highlight"><p><strong><span class="material-symbols-outlined icon-inline">rocket_launch</span> 持续成长：</strong>达到高阶不意味着"完成"。新的成长课题会不断浮现——可能是帮助他人成长、在更大范围内发挥影响、或是探索自我实现的新维度。保持初学者心态，你最好的作品可能还没到来。</p></div>
+      <p><strong><span class="material-symbols-outlined icon-inline">my_location</span> 核心方向：</strong>从"个人成长"迈向"社会贡献"——用你成熟的 ${type.name} 力量去影响和赋能更多的人，成为他人的榜样和推动力。</p>
     `;
   }
 }
@@ -728,13 +728,13 @@ function buildAdvice(type, level) {
 function generateHTML() {
   const typeSelectorHTML = MBTI.map(t => {
     const gNames = { analyst:'分析师', diplomat:'外交家', sentinel:'守护者', explorer:'探险家' };
-    const gIcons = { analyst:'🧠', diplomat:'💚', sentinel:'🛡️', explorer:'🔥' };
+    const gIcons = { analyst:'psychology', diplomat:'favorite', sentinel:'shield', explorer:'local_fire_department' };
     return `<div class="type-card ${t.group}" onclick="selectType('${t.id}')" style="--card-color:${t.color};--card-bg:${t.colorLight}">
-      <div class="type-card-icon">${t.emoji}</div>
+      <div class="type-card-icon"><span class="material-symbols-outlined">${t.emoji}</span></div>
       <div class="type-card-name">${t.id}</div>
       <div class="type-card-title">${t.name}</div>
       <div class="type-card-desc">${t.desc.substring(0,40)}...</div>
-      <div class="type-card-group">${gIcons[t.group]} ${gNames[t.group]}</div>
+      <div class="type-card-group"><span class="material-symbols-outlined">${gIcons[t.group]}</span> ${gNames[t.group]}</div>
     </div>`;
   }).join('');
 
@@ -786,7 +786,13 @@ body {
   background:linear-gradient(135deg,#f0fdfa 0%,#e0f2fe 30%,#faf5ff 60%,#f0fdfa 100%);
   min-height:100vh; color:var(--gray-800); line-height:1.6;
   display:flex; justify-content:center; align-items:flex-start; padding:20px;
+  transition:background .5s ease;
 }
+/* Group-themed backgrounds */
+body[data-group="analyst"] { background:linear-gradient(135deg,#f5f3ff 0%,#ede9fe 30%,#faf5ff 60%,#f3e8ff 100%); }
+body[data-group="diplomat"] { background:linear-gradient(135deg,#ecfdf5 0%,#d1fae5 30%,#f0fdf4 60%,#ecfdf5 100%); }
+body[data-group="sentinel"] { background:linear-gradient(135deg,#f0fdfa 0%,#e0f2fe 30%,#faf5ff 60%,#f0fdfa 100%); }
+body[data-group="explorer"] { background:linear-gradient(135deg,#fff7ed 0%,#ffedd5 30%,#fff1f2 60%,#fef2f2 100%); }
 .app-container { width:100%; max-width:800px; margin:0 auto; }
 .page { display:none; animation:fadeIn .4s ease; }
 .page.active { display:block; }
@@ -932,7 +938,7 @@ body {
   <section class="page active" id="page-select">
     <div class="card">
       <div class="type-selector-title">
-        <h1>🧠 选择你的 MBTI 类型</h1>
+        <h1><span class="material-symbols-outlined">psychology</span> 选择你的 MBTI 类型</h1>
         <p>不确定你的类型？可以先去 16personalities.com 做个测试再回来</p>
       </div>
       <div class="type-grid">${typeSelectorHTML}</div>
@@ -950,7 +956,7 @@ body {
         <div class="progress-bar-outer"><div class="progress-bar-inner" id="progress-bar" style="width:0%"></div></div>
         <div class="progress-info"><span class="progress-text" id="progress-text">0/50</span><span class="part-badge" id="part-badge"></span></div>
       </div>
-      <div><p class="question-number" id="question-number"></p><p class="scenario-label">🎬 场景</p><p class="question-scenario" id="question-scenario"></p><div class="options-list" id="options-list"></div></div>
+      <div><p class="question-number" id="question-number"></p><p class="scenario-label"><span class="material-symbols-outlined icon-inline">movie</span> 场景</p><p class="question-scenario" id="question-scenario"></p><div class="options-list" id="options-list"></div></div>
       <div class="quiz-nav">
         <button class="btn-nav" id="btn-prev" onclick="prevQuestion()">← 上一题</button>
         <span style="font-size:13px;color:var(--gray-400)" id="nav-hint"></span>
@@ -970,11 +976,11 @@ body {
         <div class="result-total-label">总分（范围 50–300）</div>
       </div>
       <div class="analysis-report" id="analysis-report"></div>
-      <h3 class="breakdown-title">📊 各维度得分明细</h3>
+      <h3 class="breakdown-title"><span class="material-symbols-outlined icon-inline">monitoring</span> 各维度得分明细</h3>
       <table class="breakdown-table"><thead><tr><th>维度</th><th>进度</th><th>得分</th><th>满分</th></tr></thead><tbody id="breakdown-tbody"></tbody></table>
       <div class="advice-section" id="advice-section"></div>
-      <button class="btn-restart" onclick="resetTest()">🔄 重新测试</button>
-      <button class="btn-restart" style="margin-top:8px" onclick="backToQuiz()">📝 返回修改答案</button>
+      <button class="btn-restart" onclick="resetTest()"><span class="material-symbols-outlined icon-inline">refresh</span> 重新测试</button>
+      <button class="btn-restart" style="margin-top:8px" onclick="backToQuiz()"><span class="material-symbols-outlined icon-inline">edit</span> 返回修改答案</button>
       <button class="btn-back-type" onclick="backToTypes()">← 选择其他 MBTI 类型</button>
     </div>
     <p class="app-footer">全 16 型 MBTI 成熟度测试 · 基于荣格认知功能理论</p>
@@ -983,7 +989,7 @@ body {
 
 <div class="modal-overlay" id="modal-confirm">
   <div class="modal-box">
-    <h3>📋 确认提交</h3>
+    <h3><span class="material-symbols-outlined icon-inline">assignment</span> 确认提交</h3>
     <p>提交后将生成你的成熟度分析报告。<br>提交后仍可返回修改答案。</p>
     <div class="modal-buttons"><button class="btn-cancel" onclick="closeModal()">继续检查</button><button class="btn-confirm" onclick="confirmSubmit()">确认提交</button></div>
   </div>
@@ -1009,6 +1015,7 @@ let quizSubmitted = false;
 function selectType(typeId) {
   currentType = MBTI_META.find(t=>t.id===typeId);
   if (!currentType) return;
+  document.body.dataset.group = currentType.group;
   const data = ALL_DATA.find(d=>d.id===typeId);
   if (!data) return;
   questions = data.questions;
@@ -1032,10 +1039,10 @@ function showTypeHome() {
     '<div class="type-home-fn">认知功能：'+currentType.functions+'</div>'+
     '<p class="type-home-desc">'+currentType.desc+'</p>'+
     '<div class="type-home-info">'+
-      '<div class="type-home-info-item strengths"><h4>💚 核心优势</h4><p>'+currentType.strengths+'</p></div>'+
-      '<div class="type-home-info-item challenges"><h4>⚠️ 成长课题</h4><p>'+currentType.challenges+'</p></div>'+
+      '<div class="type-home-info-item strengths"><h4><span class="material-symbols-outlined icon-inline">favorite</span> 核心优势</h4><p>'+currentType.strengths+'</p></div>'+
+      '<div class="type-home-info-item challenges"><h4><span class="material-symbols-outlined icon-inline">warning</span> 成长课题</h4><p>'+currentType.challenges+'</p></div>'+
     '</div>'+
-    '<p style="font-size:13px;color:var(--gray-400);text-align:center;margin-top:12px">⚡ 50道场景题 · 答案自动保存 · 可返回修改</p>'+
+    '<p style="font-size:13px;color:var(--gray-400);text-align:center;margin-top:12px"><span class="material-symbols-outlined icon-inline">bolt</span> 50道场景题 · 答案自动保存 · 可返回修改</p>'+
     '<button class="btn-start" onclick="startQuiz()">开始测试</button>'+
     '<button class="btn-back-type" onclick="backToTypes()">← 选择其他类型</button>';
   showPage('page-home');
@@ -1043,6 +1050,7 @@ function showTypeHome() {
 
 function backToTypes() {
   currentType = null; questions = []; answers = {}; quizSubmitted = false; currentIndex = 0;
+  delete document.body.dataset.group;
   showPage('page-select');
 }
 
@@ -1144,7 +1152,7 @@ function getLevel(total) {
 }
 function renderResults(r) {
   const lv = getLevel(r.total);
-  document.getElementById('result-icon').textContent = lv.icon;
+  document.getElementById('result-icon').innerHTML = '<span class="material-symbols-outlined icon-result">' + lv.icon + '</span>';
   const b = document.getElementById('result-level-badge');
   b.textContent = lv.name; b.className = 'result-level '+lv.cssClass;
   document.getElementById('result-total').textContent = r.total;
@@ -1158,12 +1166,12 @@ function renderResults(r) {
   }).join('');
   const adv = data?data.advice[analysisKey]:null;
   if (adv) {
-    document.getElementById('advice-section').innerHTML = '<h3 class="advice-title">💡 '+adv.title+'</h3><div class="advice-card"><ul>'+adv.items.map(i=>'<li>'+i+'</li>').join('')+'</ul><p style="margin-top:12px"><strong>🎯 成长目标：</strong>'+adv.goal+'</p></div>';
+    document.getElementById('advice-section').innerHTML = '<h3 class="advice-title"><span class="material-symbols-outlined icon-inline">lightbulb</span> '+adv.title+'</h3><div class="advice-card"><ul>'+adv.items.map(i=>'<li>'+i+'</li>').join('')+'</ul><p style="margin-top:12px"><strong><span class="material-symbols-outlined icon-inline">my_location</span> 成长目标：</strong>'+adv.goal+'</p></div>';
   }
 }
 
 function resetTest() {
-  if(confirm('确定清除所有答案并重新测试吗？')){answers={};quizSubmitted=false;currentIndex=0;localStorage.removeItem(getStorageKey());startQuiz();showToast('🔄 已重置');}
+  if(confirm('确定清除所有答案并重新测试吗？')){answers={};quizSubmitted=false;currentIndex=0;localStorage.removeItem(getStorageKey());startQuiz();showToast('<span class="material-symbols-outlined icon-inline">refresh</span> 已重置');}
 }
 
 // ===== TOAST =====
@@ -1200,5 +1208,5 @@ const output = generateHTML();
 const outPath = __dirname + '/index.html';
 fs.writeFileSync(outPath, output, 'utf-8');
 const sizeKB = Math.round(Buffer.byteLength(output, 'utf-8') / 1024);
-console.log('✅ Done! Written to index.html (' + sizeKB + ' KB)');
+console.log('<span class="material-symbols-outlined icon-inline">check_circle</span> Done! Written to index.html (' + sizeKB + ' KB)');
 console.log('   Contains all 16 MBTI types with 50 scenario questions each.');
